@@ -19,6 +19,7 @@ This project is designed to showcase a realistic QA automation approach for a ho
 - Admin login validation
 - API authentication testing
 - Booking endpoint validation
+- Negative API coverage for missing resources
 - Booking lifecycle API coverage
 - Hybrid UI + API inventory validation
 - Reusable page object structure
@@ -34,6 +35,7 @@ restful-booker-platform-automation/
 |-- pages/
 |-- tests/
 |   |-- api/
+|   |-- hybrid/
 |   `-- ui/
 |-- utils/
 |-- .env.example
@@ -74,9 +76,14 @@ npm test
 npm run test:smoke
 npm run test:e2e
 npm run test:api
+npm run test:hybrid
 npm run test:headed
 npm run report
 ```
+
+## CI
+
+GitHub Actions is configured to run the Playwright suite on pushes, pull requests, and manual workflow dispatches. The generated HTML report is uploaded as a build artifact to make failures easier to review.
 
 ## Portfolio Notes
 

@@ -9,6 +9,7 @@
     "test:headed": "playwright test --headed",
     "test:smoke": "playwright test --grep @smoke",
     "test:api": "playwright test tests/api",
+    "test:hybrid": "playwright test tests/hybrid",
     "test:e2e": "playwright test tests/ui",
     "report": "playwright show-report"
   },
